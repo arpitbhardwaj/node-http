@@ -1,10 +1,9 @@
 const http = require('http');
 
-
 const server = http.createServer((req,res) => {
     res.end('Hello World\n');
 }); 
 
-server.listen(4242, () => {
-    console.log('Server is running...');
+server.listen(8080, () => {
+    console.log('Http Server is listening on port 8080');
 })
